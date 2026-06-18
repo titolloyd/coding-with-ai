@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <h1>Tip Calculator</h1>
+
+    <input type="number" id="bill" placeholder="Enter bill amount">
+
+    <button onclick="calculateTip()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateTip() {
+            let bill = document.getElementById("bill").value;
+            let tip = bill * 0.15;
+            let total = Number(bill) + tip;
+
+            document.getElementById("result").innerHTML =
+                "Tip: $" + tip.toFixed(2) +
+                "<br>Total: $" + total.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
+
+<!--After studying the tip calculator code, I understood that HTML is used to create
+the webpage elements such as the title, input box, button, and result area. I also understood
+that JavaScript is responsible for performing the calculations when the user clicks the button.
+The program takes the bill amount entered by the user, calculates a 15% tip, adds it to the
+original bill, and displays both the tip and total amount on the page. However, I was still
+a little confused about how document.getElementById() is able to locate specific elements on
+the webpage and why Number(bill) is necessary before adding the tip to the bill amount.
+I also needed more explanation about how innerHTML updates and displays the results on the screen.-->
+
+<!--This is my reflection: After reading and analyzing this code, I think coding with AI
+means having a helpful learning partner that can explain code, answer questions, and make
+programming concepts easier to understand. AI can break down complicated code into simpler
+explanations and help beginners learn step by step. At the same time, I realized that it is
+important not to depend entirely on AI-generated code. Understanding how the code works and
+why it works is still necessary for learning and problem-solving. For me, coding with AI
+means using technology as a guide and learning tool while continuing to develop my own
+understanding and programming skills.-->
